@@ -21,13 +21,13 @@ def main():
                 print('got event')
                 if event.type == VkBotEventType.MESSAGE_NEW:
                     print('message')
-                    if event.from_chat:
+                    if event.from_user:
+                        print(event.message['from_id'])
                         bot_api.messages.send(
                             random_id=random.getrandbits(32),
-                            chat_id=event.chat_id,
+                            peer_id=event.message['peer_id'],
                             message=random.choice(replies)
                         )
-                        print(event.chat_id)
         except requests.exceptions.ReadTimeout as timeout:
             continue
 

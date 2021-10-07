@@ -9,10 +9,10 @@ def logs(s):
         df.write(s + '\n')
 
 
-def send(bot_api, chat_id, message='', attachment=[]):
+def send(bot_api, peer_id, message='', attachment=[]):
     bot_api.messages.send(
         random_id=random.getrandbits(32),
-        chat_id=chat_id,
+        peer_id=peer_id,
         message=message,
         attachment=attachment
     )
