@@ -1,5 +1,5 @@
 # ! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-group_token = "7bd6aa5abc618cf36dd8c8d1c3d7206e8fc77d853815943cb932ff02025047b658dd1d366fb766a53e6ed"
-group_id = "207730899"
+group_token = 'ef1436ed397ab789434e521c1fc7b01ec7a1f9ef821bf6e9095c04c7584a708c39b04af1c7bc866c23734'
+group_id = 207730899
